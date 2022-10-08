@@ -1,4 +1,4 @@
-/* Código simplório, apenas para fornecer o serviço para a aplicação */
+/* fornecer o serviço para a aplicação */
 var api = {}
 
 
