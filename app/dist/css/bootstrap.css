@@ -54,7 +54,6 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 
 body {
   margin-top: 10%;
-  /* margin: 0; */
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 1rem;
   font-weight: 400;
@@ -267,6 +266,7 @@ button,
 [type="button"],
 [type="reset"],
 [type="submit"] {
+  appearance: auto;
   -webkit-appearance: button;
 }
 
@@ -326,15 +326,18 @@ progress {
 
 [type="search"] {
   outline-offset: -2px;
+  appearance: auto;
   -webkit-appearance: none;
 }
 
 [type="search"]::-webkit-search-decoration {
+  appearance: auto;
   -webkit-appearance: none;
 }
 
 ::-webkit-file-upload-button {
   font: inherit;
+  appearance: auto;
   -webkit-appearance: button;
 }
 
@@ -3768,8 +3771,10 @@ input[type="button"].btn-block {
   display: block;
   min-height: 1.5rem;
   padding-left: 1.5rem;
+  print-color-adjust: auto;
   -webkit-print-color-adjust: exact;
-  color-adjust: exact;
+  /* print-color-adjust: exact; */
+  /* color-adjust: exact; */
 }
 
 .custom-control-inline {
