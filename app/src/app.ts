@@ -13,11 +13,11 @@ if (form) {
 
 const botaoImporta = document.querySelector('#botao-importa');
 
-if (botaoImporta){
+if (botaoImporta) {
     botaoImporta.addEventListener('click', () => {
         controller.importarDados();
     })
 }
-else{
+else {
     throw Error("Botao importa não foi encontrado!");
 }

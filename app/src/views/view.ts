@@ -13,7 +13,7 @@ export abstract class View<T> {
             throw Error(`Seletor ${seletor} não existe no DOM. Verifique`);
         }
     }
-    
+
     // @logarTempoDeExecucao(true)
     // @inspect()
     public update(model: T): void {

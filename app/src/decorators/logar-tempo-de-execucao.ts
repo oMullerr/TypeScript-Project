@@ -1,14 +1,14 @@
-export function logarTempoDeExecucao(emSegundos: boolean = false){
-    return function(
+export function logarTempoDeExecucao(emSegundos: boolean = false) {
+    return function (
         target: any,
         propertyKey: string,
         descriptor: PropertyDescriptor
-    ){
+    ) {
         const metodoOriginal = descriptor.value;
-        descriptor.value = function(...args: Array<any>){ // sobrescreve
+        descriptor.value = function (...args: Array<any>) { // sobrescreve
             let divisor = 1;
             let unidade = 'milisegundos';
-            if (emSegundos){
+            if (emSegundos) {
                 divisor = 1000;
                 unidade = 'segundos'
             }
