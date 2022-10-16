@@ -4,8 +4,8 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
-import { escape } from '../decorators/escape.js';
-import { View } from './view.js';
+import { escape } from "../decorators/escape.js";
+import { View } from "./view.js";
 export class NegociacoesView extends View {
     template(model) {
         return `
@@ -18,7 +18,9 @@ export class NegociacoesView extends View {
                 </tr>
             </thead>
             <tbody>
-                ${model.lista().map(negociacao => {
+                ${model
+            .lista()
+            .map((negociacao) => {
             return `
                         <tr>
                             <td>${this.formatar(negociacao.data)}
@@ -31,14 +33,14 @@ export class NegociacoesView extends View {
                             </td>
                         </tr>
                     `;
-        }).join('')}
+        })
+            .join("")}
             </tbody>
         </table>
         `;
     }
     formatar(data) {
-        return new Intl.DateTimeFormat()
-            .format(data);
+        return new Intl.DateTimeFormat().format(data);
     }
 }
 __decorate([

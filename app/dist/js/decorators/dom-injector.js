@@ -10,7 +10,7 @@ export function domInjector(seletor) {
             return elemento;
         };
         Object.defineProperty(target, propertyKey, {
-            get: getter
+            get: getter,
         });
     };
 }

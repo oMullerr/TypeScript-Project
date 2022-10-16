@@ -6,7 +6,7 @@ export function inspect() {
             console.log(`>>> Parâmetros: ${JSON.stringify(args)}`);
             const retorno = metodoOriginal.apply(this, args);
             console.log(`>>> Retorno: ${JSON.stringify(retorno)}`);
-            console.log('**********************************************************');
+            console.log("**********************************************************");
             return retorno;
         };
         return descriptor;
