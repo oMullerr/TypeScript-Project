@@ -159,7 +159,7 @@ a {
 }
 
 a:hover {
-  color: #0056b3;
+  color: #fd7e14;
   text-decoration: underline;
 }
 
@@ -1717,7 +1717,7 @@ pre code {
 }
 
 .table-hover tbody tr:hover {
-  color: #212529;
+  color: #007bff;
   background-color: rgba(0, 0, 0, 0.075);
 }
 
